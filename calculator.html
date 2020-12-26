@@ -11,12 +11,13 @@
     <option value="/">/</option>
 </select>
     
-<button id="calcular2">Calcular</button>
-
+<button id="calcular">Calcular</button>
+<button id="limpiar">Limpiar</button>
+    
 <output id="r2"></output> 
 <script>
     
-    document.querySelector('#calcular2').addEventListener('click', () =>{
+    document.querySelector('#calcular').addEventListener('click', () =>{
         const n1 = parseInt(document.querySelector('#n11').value);
         const n2 = parseInt(document.querySelector('#n22').value);
         const op2 = document.querySelector('#op').value;
@@ -32,6 +33,10 @@
         }
         document.querySelector('#r2').innerHTML = r;
     });
+     document.querySelector('#limpiar').addEventListener('click', () => {
+        alert("Yan");
+         console.log("Yandi")
+     });
 
 </script>
 </html>
