@@ -1,3 +1,6 @@
+<html>
+<body>
+
 <input type="text" id="n11" placeholder="n1">
 <input type="text" id="n22" placeholder="n2">
 
@@ -31,3 +34,5 @@
     });
 
 </script>
+</html>
+</body>
