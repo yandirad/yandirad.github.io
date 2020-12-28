@@ -29,14 +29,17 @@
         }else if(op2 == '*'){
             r = n1 * n2;
         }else if(op2 == '/'){
-            r = n1 / n2;
+            if(n2 == 0){
+                alert(document.querySelector("No es posible dividir por cero"));
+            } r = n1 / n2;
         }
+                
         document.querySelector('#r2').innerHTML = r;
     });
      document.querySelector('#limpiar').addEventListener('click', () => {
-         alert(document.querySelector('#n22').value);
-         document.querySelector('#n22').value = ""
-       document.querySelector('#r2').innerHTML = "";
+        document.querySelector('#n22').value = ""
+        document.querySelector('#n22').value = ""
+        document.querySelector('#r2').innerHTML = "";
      });
 
 </script>
